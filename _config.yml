@@ -1,0 +1,20 @@
+# link: https://jekyllrb.com/docs/configuration/
+
+# Handling Reading
+safe                : false
+strict_front_matter : true
+
+# Outputting
+timezone            : Asia/Seoul
+
+# Theme [slate]
+# link: https://github.com/pages-themes/slate
+theme               : jekyll-theme-slate
+title               : dukim site
+description         : dukim site
+baseurl             : ""
+url                 : ""
+twitter_username    : DukimD
+github_username     : dukim-go
+show_downloads      : false
+google_analytics    :
