@@ -23,4 +23,4 @@ github:
     repository_url: https://github.com/dukim-go
 
 # Permalinks
-paginate            : 5
+paginate            : 10
