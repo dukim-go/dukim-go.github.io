@@ -21,3 +21,6 @@ google_analytics    :
 github: 
     is_project_page: true
     repository_url: https://github.com/dukim-go
+
+# Permalinks
+paginate            : 5
