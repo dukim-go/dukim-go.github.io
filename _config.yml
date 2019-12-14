@@ -10,8 +10,8 @@ timezone            : Asia/Seoul
 # Theme [slate]
 # link: https://github.com/pages-themes/slate
 theme               : jekyll-theme-slate
-title               : dukim site
-description         : dukim site
+title               : dukim-go site
+description         : dukim-go site
 baseurl             : ""
 url                 : ""
 twitter_username    : DukimD
