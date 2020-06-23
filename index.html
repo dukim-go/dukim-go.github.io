@@ -10,9 +10,13 @@ layout: home
       <h1 class="catalogue-title">{{ post.title }}</h1>
       <div class="catalogue-line"></div>
 
-      <p>
+      <!-- content -->
+      <!-- <p>
         {{ post.content | strip_html | truncatewords: 30 }}
-      </p>
+      </p> -->
+
+      <!-- excerpt -->
+      {{ post.excerpt }}
 
     </div>
   </a>

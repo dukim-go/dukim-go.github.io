@@ -5,12 +5,18 @@ title: "V3 Mobile Plus"
 author: "dukim-go"
 categories: profile
 tags: [ iOS, Swift, portfolio ]
+excerpt_separator: <!--more-->
 ---
+
+AhnLab V3 Mobile Plus' 
+- iOS 어플리케이션 개발 - 알림장, 오픈패스를 통한 보안 어플리케이션
 
 <div align="center">
     <img src="{{ "/assets/images/profile/V3 Mobile Plus/1.png"| relative_url }}" width="250"/>
     <p style="text-align:center">제품 안내 페이지</p>
 </div>
+
+<!--more-->
 
 <div align="center">
     <img src="{{ "/assets/images/profile/V3 Mobile Plus/2.png"| relative_url }}" width="250"/>
