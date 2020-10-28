@@ -1,5 +1,12 @@
-title: Your awesome title
-lang: en
-description: Write an awesome description for your new site here
+# link: https://jekyllrb.com/docs/configuration/
 
-theme: jekyll-rtd-theme
+# Handling Reading
+safe                : false
+strict_front_matter : true
+
+# Outputting
+theme               : jekyll-rtd-theme
+title               : dukim-go
+description         : dukim-go blog
+twitter_username    : DukimD
+github_username     : dukim-go

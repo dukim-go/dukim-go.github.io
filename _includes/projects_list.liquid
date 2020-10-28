@@ -1,0 +1,15 @@
+{%- assign site_pages = site.html_pages
+    | sort: "path"
+    | sort: "sort"
+    | where_exp: "item", "item.url != '/404.html'"
+    | where_exp: "item", "item.url != '/search.html'" -%}
+{%- assign site_dirs  = site_pages | where_exp: "item", "item.dir == item.url" -%}
+{%- assign site_files = site_pages | where_exp: "item", "item.dir != item.url" -%}
+
+{%- capture workdir %}{{ page.dir | append: "projects/" }}{%- endcapture -%}
+{%- assign workdir_files = site_files | where_exp: "item", "item.dir == workdir" -%}
+{%- assign reverse_workdir_files = workdir_files | reverse -%}
+
+{%- for item in reverse_workdir_files %}
+* [{{ item.title | default: item.name }}]({{ item.url | relative_url }})
+{%- endfor -%}
