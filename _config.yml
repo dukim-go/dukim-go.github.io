@@ -5,8 +5,13 @@ safe                : false
 strict_front_matter : true
 
 # Outputting
-theme               : jekyll-rtd-theme
+# theme               : jekyll-rtd-theme
 title               : dukim-go
 description         : dukim-go blog
 twitter_username    : DukimD
 github_username     : dukim-go
+
+plugins:
+  - jekyll-remote-theme
+  
+remote_theme: rundocs/jekyll-rtd-theme
