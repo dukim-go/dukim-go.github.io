@@ -1,26 +1,5 @@
-# link: https://jekyllrb.com/docs/configuration/
+title: Your awesome title
+lang: en
+description: Write an awesome description for your new site here
 
-# Handling Reading
-safe                : false
-strict_front_matter : true
-
-# Outputting
-timezone            : Asia/Seoul
-
-# Theme [slate]
-# link: https://github.com/pages-themes/slate
-theme               : jekyll-theme-slate
-title               : dukim-go site
-description         : dukim-go site
-baseurl             : ""
-url                 : ""
-twitter_username    : DukimD
-github_username     : dukim-go
-show_downloads      : false
-google_analytics    :
-github: 
-    is_project_page: true
-    repository_url: https://github.com/dukim-go
-
-# Permalinks
-paginate            : 10
+theme: jekyll-rtd-theme
