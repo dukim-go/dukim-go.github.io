@@ -1,9 +1,17 @@
 {%- assign _page = include._page | default: page -%}
+{%- assign _size = include._tabsize -%}
+{%- assign _size_plus = include._tabsize | plus: 1 -%}
 {%- capture _tabsize -%}
-    {%- include reset/tabs.liquid size=include._tabsize -%}
+    {%- include reset/tabs.liquid size=_size -%}
+{%- endcapture -%}
+{%- capture _tabsize_plus -%}
+    {%- include reset/tabs.liquid size=_size_plus -%}
 {%- endcapture -%}
 
-{{ _tabsize }}* {{ _page.description | default: "Assign 'description' in description" }}
-{{ _tabsize }}* 버전: {{ _page.version | default: "Assign 'description' in version" }}
-{{ _tabsize }}* 기간: {{ _page.term | default: "Assign 'description' in term" }}
-{{ _tabsize }}* 참고: [{{ _page.link | default: "Assign 'description' in link" }}]({{ _page.link }})
+{{ _tabsize }}* {{ _page.description | default: "Assign 'description' in project" }}
+{{ _tabsize }}* 기간
+{%- assign periods = _page.periods | default: "Assign 'periods' in project" | split: ", " -%}
+{%- for period in periods %}
+{{ _tabsize_plus }}* {{ period }}
+{% endfor -%}
+{{ _tabsize }}* 참고: [{{ _page.link | default: "Assign 'link' in project" }}]({{ _page.link }})
