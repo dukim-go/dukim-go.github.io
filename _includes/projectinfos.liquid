@@ -1,9 +1,10 @@
 {%- include reset/site_pages.liquid -%}
 
-{%- assign workdir = include.directory | default: page.dir -%}
+{%- assign workdir = "/profile/projects/" -%}
 {%- assign workdir_files = site_files | where_exp: "item", "item.dir == workdir" -%}
 {%- assign reverse_workdir_files = workdir_files | reverse -%}
 
-{%- for item in reverse_workdir_files %}
+{% for item in reverse_workdir_files %}
 * [{{ item.title | default: item.name }}]({{ item.url | relative_url }})
+{% include projectinfo.liquid _page=item _tabsize=1 %}
 {%- endfor -%}

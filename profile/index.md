@@ -36,4 +36,4 @@ sort: 0
     - 기간: 2016.03 ~ 
 
 ## 프로젝트
-{% include pages_in_directory.liquid directory = "/profile/projects/" %}
+{% include projectinfos.liquid %}

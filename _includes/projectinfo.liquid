@@ -1,0 +1,9 @@
+{%- assign _page = include._page | default: page -%}
+{%- capture _tabsize -%}
+    {%- include reset/tabs.liquid size=include._tabsize -%}
+{%- endcapture -%}
+
+{{ _tabsize }}* {{ _page.description | default: "Assign 'description' in description" }}
+{{ _tabsize }}* 버전: {{ _page.version | default: "Assign 'description' in version" }}
+{{ _tabsize }}* 기간: {{ _page.term | default: "Assign 'description' in term" }}
+{{ _tabsize }}* 참고: [{{ _page.link | default: "Assign 'description' in link" }}]({{ _page.link }})
