@@ -1,0 +1,10 @@
+{%- assign workdir = include.directory -%}
+{%- assign workdir_files = site.static_files | where_exp: "item", "item.path contains workdir" -%}
+
+{%- for item in workdir_files %}
+<div align="center">
+    <img src="{{ item.path | relative_url }}" width="250"/>
+    <!-- <p style="text-align:center">{{ item.name }}</p> -->
+    <br>
+</div>
+{%- endfor %}
