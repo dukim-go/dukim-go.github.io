@@ -2,10 +2,10 @@
 {%- assign _size = include._tabsize -%}
 {%- assign _size_plus = include._tabsize | plus: 1 -%}
 {%- capture _tabsize -%}
-    {%- include reset/tabs.liquid size=_size -%}
+    {%- include common/rest/tabs.liquid size=_size -%}
 {%- endcapture -%}
 {%- capture _tabsize_plus -%}
-    {%- include reset/tabs.liquid size=_size_plus -%}
+    {%- include common/rest/tabs.liquid size=_size_plus -%}
 {%- endcapture -%}
 
 {{ _tabsize }}* {{ _page.description | default: "Assign 'description' in project" }}

@@ -1,7 +1,7 @@
 <div class="content-wrap">
     <!-- 페이지 인쇄 시, 메뉴버튼 및 타이틀 삭제 -->
     <!-- <div class="header d-flex flex-justify-between p-2 hide-lg hide-xl" aria-label="top navigation">
-        <button id="toggle" class="btn-octicon p-2 m-0 text-white" type="button">
+        <button id="toggle" aria-label="Toggle menu" class="btn-octicon p-2 m-0 text-white" type="button">
             <i class="fa fa-bars"></i>
         </button>
         <div class="title flex-1 d-flex flex-justify-center">
@@ -10,14 +10,14 @@
     </div> -->
     <div class="content p-3 p-sm-5">
         <!-- 페이지 경로 삭제 -->
-        <!-- {% include class/_breadcrumbs.liquid %}
+        <!-- {% include templates/breadcrumbs.liquid %}
         <hr> -->
-        <div role="main" itemscope="itemscope" itemtype="http://schema.org/Article">
+        <div role="main" itemscope="itemscope" itemtype="https://schema.org/Article">
             <div class="markdown-body" itemprop="articleBody">
                 {{ content }}
             </div>
         </div>
         <!-- 공통 푸터 삭제 -->
-        <!-- {% include class/_footer.liquid %} -->
+        <!-- {% include templates/footer.liquid %} -->
     </div>
 </div>
