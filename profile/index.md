@@ -1,5 +1,4 @@
 ---
-layout: profile-default
 sort: 0
 ---
 
