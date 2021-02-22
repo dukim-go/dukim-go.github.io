@@ -8,12 +8,21 @@
     {%- include common/rest/tabs.liquid size=_size_plus -%}
 {%- endcapture -%}
 
+<!-- description -->
 {{ _tabsize }}* {{ _page.description | default: "Assign 'description' in project" }}
+<!-- periods -->
 {{ _tabsize }}* 기간
-{%- assign periods = _page.periods | default: "Assign 'periods' in project" | split: ", " -%}
+{%- assign periods = _page.periods | default: "Assign 'periods' in project" -%}
 {%- for period in periods %}
 {{ _tabsize_plus }}* {{ period }}
 {%- endfor %}
+<!-- parts -->
+{{ _tabsize }}* 기술
+{%- assign parts = _page.parts | default: "Assign 'parts' in project" -%}
+{%- for part in parts %}
+{{ _tabsize_plus }}* {{ part }}
+{%- endfor %}
+<!-- link -->
 {%- if _page.link != null %}
-{{ _tabsize }}* 참고: [{{ _page.link | default: "Assign 'link' in project" }}]({{ _page.link }})    
+{{ _tabsize }}* 참고: [{{ _page.link | default: "Assign 'link' in project" }}]({{ _page.link }})
 {%- endif %}

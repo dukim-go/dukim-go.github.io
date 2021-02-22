@@ -7,4 +7,5 @@
 {%- for item in reverse_workdir_files %}
 * [{{ item.title | default: item.name }}]({{ item.url | relative_url }})
 {% include projectinfo.liquid _page=item _tabsize=1 %}
+<br /><br />
 {%- endfor %}

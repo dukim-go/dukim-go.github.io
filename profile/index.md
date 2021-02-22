@@ -16,23 +16,26 @@ sort: 0
 공통 모듈을 만들어서 적용하는 것을 좋아하며, 최근 Reactive Programming, TDD 등에 관심을 두고 있습니다.
 
 ## 보유기술
+
 * 언어
-    - Objective-C
-    - Swift
+  * Objective-C
+  * Swift
 * 플랫폼 및 환경
-    - iOS
-    - macOS
-    - watchOS
-    - Linux
-    - Docker
-* Etc 
-    - Git, SVN
-    - Jira
+  * iOS
+  * macOS
+  * watchOS
+  * Linux
+  * Docker
+* Etc
+  * Git, SVN
+  * Jira
 
 ## 경력
-* [GPMobile](http://www.gpmobile.co.kr/) 
-    - iOS Developer
-    - 기간: 2016.03 ~ 
+
+* [GPMobile](http://www.gpmobile.co.kr/)
+  * iOS Developer
+  * 기간: 2016.03 ~
 
 ## 프로젝트
+
 {% include projectinfos.liquid %}
