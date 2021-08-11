@@ -1,0 +1,11 @@
+{%- include common/rest/site_pages.liquid -%}
+{%- include common/rest/workdir.liquid workdir=page.dir -%}
+
+{%- assign workdir_files = site_files | where_exp: "item", "item.dir == workdir" | sort:"date" -%}
+{%- for item in workdir_files %}
+- [{{ item.title | default: item.name }}]({{ item.url | relative_url }})
+{%- endfor -%}
+
+{%- if include.all -%}
+    {%- for workdir in workdir_dirs %}{% include common/core/_list.liquid %}{% endfor -%}
+{%- endif -%}
