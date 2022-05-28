@@ -29,13 +29,3 @@ sort: 0
 * Etc
   * Git, SVN
   * Jira
-
-## 경력
-
-* [GPMobile](http://www.gpmobile.co.kr/)
-  * iOS Developer
-  * 기간: 2016.03 ~
-
-## 프로젝트
-
-{% include projectinfos.liquid %}

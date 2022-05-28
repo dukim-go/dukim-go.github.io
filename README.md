@@ -8,3 +8,15 @@
       1. list.liquid: 정렬부분 수정
       2. toctree.liquid: 정렬부분 수정
       3. _toctree.liquid: 정렬부분 수정
+2. Local build
+   1. common
+
+      ```shell
+      bundle exec jekyll serve
+      ```
+
+   2. unpublished
+
+      ```shell
+      bundle exec jekyll serve --unpublished
+      ```
